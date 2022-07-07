@@ -1,48 +1,40 @@
 # Ejemplos de clase
 
-Crear una carpeta nueva dentro de /home/inove donde alojaremos todos los repositorios que utilizacemos:
+Mencionar que en la raiz del repo encontrará un archivo de "comandos_utiles" con los comandos básicos de linux que utilizaremos esta clase.
+
+Logearse desde VM y obtener cual es la dirección IP del dispositivo:
 ```sh
-$ mkdir repos
+$ ifconfig
 ```
 
-Ingresar a la carpeta creada:
-```sh
-$ cd repos
+Anotar la dirección de IP, conectarse por ssh desde una terminal del host
+```
+$ ssh inove@<ip_dispositivo>
 ```
 
-A modo de práctica crearemos un script para descargar el repositorio de clase con el programa "nano":
+Explorar la carpeta "home" y mostrar su interior. Mencionar que este es el espacio equivalente a "Mis Documentos" en Windows y será el lugar donde alojemos todos los recursos que usemos del curso.
+
+Explorar la raiz del sistema operativo:
 ```sh
-$ nano descargar_repo_1.sh
+$ cd /
 ```
 
-Dentro del editor colocar la siguiente línea:
-```sh
-git clone https://github.com/InoveAlumnos/intro_iot_python.git
-```
-
-Cerrar el editor presionando "CTRL + X", seguido confirmar con "Y" que deseamos almacenar los cambios y presionar "enter".
-
-Verificar que el archivo exista observando los archivos existentens dentro de la carpeta:
+Mostrar su contenido y describir brevemente lo que encontramos allí:
 ```sh
 $ ls -l
 ```
 
-Si el archivo existe, observar su contenido para verificar que este correctamente generado:
+Mencionar que este es el espacio equivalente a "Disco C:" en Windows y será el lugar en donde se instalen los programas y librerías del sistema operativo (en "/usr/bin" los programas y en "/usr/lib" las librerías). Por ejemplo, el lanzador de python3 está en la carpeta bin:
 ```sh
-$ cat descargar_repo_1.sh
+$ ls -l /usr/bin/python
 ```
 
-Si el archivo tiene el contenido deseado, debemos cambiar sus permisos para poder ejecutarlo (dar permisos de ejecución):
+Parado en la carpeta raiz, volver a ingresar a la carpeta home:
 ```sh
-$ sudo chmod +x descargar_repo_1.sh
+$ ls home
 ```
 
-Verificar que los permisos se hayan modificado:
+Si deseamos conocer la ruta completa de donde nos encontramos parados, ejecutar:
 ```sh
-$ ls -l
-```
-
-Lanzar el script para descargar el repositorio:
-```sh
-$ ./descargar_repo_1.sh
+$ pwd
 ```
