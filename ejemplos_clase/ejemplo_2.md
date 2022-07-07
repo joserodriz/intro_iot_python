@@ -56,3 +56,23 @@ Lanzar el script para descargar el repositorio:
 ```sh
 $ ./descargar_repo_1.sh
 ```
+
+Ingresar al repositorio descargado:
+```sh
+$ cd <nombre_carpeta>
+```
+
+Explorar el contenido del repositorio:
+```sh
+$ ls -l
+```
+
+Verificar que el repositorio está al día:
+```sh
+$ git status
+```
+
+Verificar que no hay nada para descargar:
+```sh
+$ git pull
+```
