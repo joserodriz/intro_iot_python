@@ -9,6 +9,10 @@ Conectarse por SSH
 ```sh
 $ ssh inove@<ip_dispositivo>
 ```
+Borrar todas las conexiones registradas de SSH
+```sh
+$ del .ssh\known_hosts
+```
 Observar el contenido de una carpeta
 ```sh
 $ ls -l
