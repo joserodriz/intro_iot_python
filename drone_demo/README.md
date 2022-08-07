@@ -18,6 +18,11 @@ https://<ip_host_flask>:5010
 Para poder ejecutar esta aplicación, será necesario tener instalada la versión 3.7 de Python o superior.\
 Instale las librerias que se comentan en requirements.txt
 
+En caso de que los mensajes desde el celular no lleguen al servidor, insalar eventlet:
+```sh
+pip3 install eventlet==0.33.1
+```
+
 # Tópicos de MQTT
 Por defecto la aplicación busca conectarse a un broker MQTT local (localhost) en el puerto 1883. Los datos de telemetría de los sensores de la aplicación son:
 ```
