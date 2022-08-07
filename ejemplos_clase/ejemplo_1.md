@@ -1,6 +1,6 @@
 # Ejemplos de clase
 
-Mencionar que en la raiz del repo encontrará la carpeta "drone_drome", el objetivo de este ejemplo será lanzar el dimulador del drone para demostrar lo que estaremos realizando en el curso.
+En la raiz del repo encontrará la carpeta "drone_drome", el objetivo de este ejemplo será lanzar el simulador del drone para demostrar lo que estaremos realizando en el curso.
 
 ### 1 - Setup
 Este programa lo lanzaremos en su máquina (PC), no en la máquina virtual (VM). Para ello debe tener instalada la versión 3.7 de Python o superior.\
