@@ -153,7 +153,7 @@ socket.on("connect", function() {
         // permito actualizar el estado del motor
         if(data.volar == true) {
             const val = Number(msg);
-            data.motores[0] = msg;
+            data.motores[0] = val;
             update();
         }
     });
@@ -162,7 +162,7 @@ socket.on("connect", function() {
         // permito actualizar el estado del motor
         if(data.volar == true) {
             const val = Number(msg);
-            data.motores[1] = msg;
+            data.motores[1] = val;
             update();
         }
     });
@@ -171,7 +171,7 @@ socket.on("connect", function() {
         // permito actualizar el estado del motor
         if(data.volar == true) {
             const val = Number(msg);
-            data.motores[2] = msg;
+            data.motores[2] = val;
             update();
         }
     });
@@ -180,7 +180,7 @@ socket.on("connect", function() {
         // permito actualizar el estado del motor
         if(data.volar == true) {
             const val = Number(msg);
-            data.motores[3] = msg;
+            data.motores[3] = val;
             update();
         }
     });
