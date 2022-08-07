@@ -9,7 +9,7 @@ Instale las librerias que se comentan en requirements.txt de "drone_demo":
 $ pip3 install -r requirements.txt
 ```
 
-__IMPORTANTE__: En caso de que los mensajes desde el celular no lleguen al servidor, insalar eventlet:
+__IMPORTANTE__: En caso de que los mensajes desde el celular no lleguen al servidor, instalar eventlet:
 ```sh
 $ pip3 install eventlet==0.33.1
 ```
